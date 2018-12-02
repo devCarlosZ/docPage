@@ -14,66 +14,124 @@
     <nav id="navbar">
         <header>HTML</header>
         <ul>
-            <a class="nav-link" href="#introduction" rel="internal"><li>HTML Introduction</li></a>
-            <a class="nav-link" href="#htmlDocuments" rel="internal"><li>HTML Documents</li></a>
-            <a class="nav-link" href="#htmlHeadings" rel="internal"><li>HTML Headings</li></a>
-            <a class="nav-link" href="#htmlParagraphs rel="internal"><li>HTML Paragraphs</li></a>
-            <a class="nav-link" href="#htmlLinks" rel="internal"><li>HTML Links</li></a>
-            <a class="nav-link" href="#htmlImages" rel="internal"><li>HTML Images</li></a>
-            <a class="nav-link" href="#htmlButtons" rel="internal"><li>HTML Buttons</li></a>
-            <a class="nav-link" href="#htmlList" rel="internal"><li>HTML List</li></a>
+            <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+            <a class="nav-link" href="#HTML_Documents" rel="internal"><li>HTML Documents</li></a>
+            <a class="nav-link" href="#HTML_Headings" rel="internal"><li>HTML Headings</li></a>
+            <a class="nav-link" href="#HTML_Paragraphs" rel="internal"><li>HTML Paragraphs</li></a>
+            <a class="nav-link" href="#HTML_Links" rel="internal"><li>HTML Links</li></a>
+            <a class="nav-link" href="#HTML_Images" rel="internal"><li>HTML Images</li></a>
+            <a class="nav-link" href="#HTML_Buttons" rel="internal"><li>HTML Buttons</li></a>
+            <a class="nav-link" href="#HTML_List" rel="internal"><li>HTML List</li></a>
             <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
         </ul>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="introduction">
-            <header>HTML Introduction</header>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
             <article>
-                <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
+                <p>
+                    At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document.
+                </p>
+                <p>
+                    Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.
+                </p>
             </article>
         </section>
-        <section class="main-section" id="htmlDocuments">
+        <section class="main-section" id="HTML_Documents">
             <header>HTML Documents</header>
             <article>
-                <p>* All HTML documents must start with a document type declaration: &lt!DOCTYPE html&gt.<br>* The HTML document itself begins with &lthtml&gt and ends with &lt/html&gt.<br>* The visible part of the HTML document is between &ltbody&gt and &lt/body&gt.
-                </p>
+                <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+                <li>All HTML documents must start with a document type declaration: &lt!DOCTYPE html&gt.</li>
+                <li>The HTML document itself begins with &lthtml&gt and ends with &lt/html&gt.</li>
+                <li>The visible part of the HTML document is between &ltbody&gt and &lt/body&gt.</li>
+                <code>
+                    &lt!DOCTYPE html&gt
+                    &lthtml&gt
+                    &ltbody&gt
+                    &lth1&gtMy First Heading&lt/h1&gt
+                    &ltp&gtMy first paragraph.&lt/p&gt
+                    &lt/body&gt
+                    &lt/html&gt
+                </code>
             </article>
         </section>
-        <section class="main-section" id="htmlHeadings">
+        <section class="main-section" id="HTML_Headings">
             <header>HTML Headings</header>
             <article>
-                <p>HTML headings are defined with the &lth1&gt to &lth6&gt tags. &lth1&gt defines the most important heading. &lth6&gt defines the least important heading.
+                <p>
+                    HTML headings are defined with the &lth1&gt to &lth6&gt tags. &lth1&gt defines the most important heading. &lth6&gt defines the least important heading.
                 </p>
+                <li>Heading information may be used by user agents, for example, to construct a table of contents for a document automatically.</li>
+                <li>Do not use lower levels to decrease heading font size: use the CSS font-size property instead.</li>
+                <li>Avoid skipping heading levels: always start from &lth1&gt, next use &lt2&gt and so on.</li>
+                <li>You should consider avoiding using &lth1&gt more than once on a page. See Defining sections in Using HTML sections and outlines for more information.</li>
+                <code>
+                    &lth1&gtThis is heading 1&lt/h1&gt
+                    &lth2&gtThis is heading 2&lt/h2&gt
+                    &lth3&gtThis is heading 3&lt/h3&gt
+                </code>
             </article>
         </section>
-        <section class="main-section" id="htmlParagraphs">
-            <header>HTML Paragraps</header>
-            <article></article>
-            <p>HTML paragraphs are defined with the &ltp&gt tag.</p>
+        <section class="main-section" id="HTML_Paragraphs">
+            <header>HTML Paragraphs</header>
+            <article>
+                <p>HTML paragraphs are defined with the &ltp&gt tag.</p>
+                <code>
+                    &ltp&gtThis is a paragraph.&lt/p&gt
+                    &ltp&gtThis is another paragraph.&lt/p&gt
+                </code>
             </article>
         </section>
-        <section class="main-section" id="htmlLinks">
+        <section class="main-section" id="HTML_Links">
             <header>HTML Links</header>
             <article>
                 <p>HTML links are defined with the &lta&gt tag.</p>
+                <code>
+                    &lta href="https://www.w3schools.com"&gtThis is a link&lt/a&gt
+                </code>
             </article>
         </section>
-        <section class="main-section" id="htmlImages">
+        <section class="main-section" id="HTML_Images">
             <header>HTML Images</header>
             <article>
-                <p>HTML images are defined with the &ltimg&gt tag. The source file (src), alternative text (alt), width, and height are provideed as atrributes.</p>
+                <p>
+                    HTML images are defined with the &ltimg&gt tag. The source file (src), alternative text (alt), width, and height are provideed as atrributes.
+                </p>
+                <code>
+                    &ltimg src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt
+                </code>
             </article>
         </section>
-        <section class="main-section" id="htmlButtons">
+        <section class="main-section" id="HTML_Buttons">
             <header>HTML Buttons</header>
             <article>
                 <p>HTML buttons are defined with the &ltbutton&gt tag.</p>
+                <code>
+                    &ltbutton&gtClick me&lt/button&gt
+                </code>
             </article>
         </section>
-        <section class="main-section" id="htmlList">
+        <section class="main-section" id="HTML_List">
             <header>HTML List</header>
             <article>
-                <p>HTML list are defined with the &lt</p>
+                <p>
+                    HTML list are defined with the &ltul&gt (unordered/bullet list) or the &ltli&gt (ordered/numbered list) tag, followed by the &ltli&gt tags (list items).
+                </p>
+                <code>
+                    &ltul>
+                    &ltli&gtCoffee&lt/li&gt
+                    &ltli&gtTea&lt/li&gt
+                    &ltli&gtMilk&lt/li&gt
+                    &lt/ul>
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <p>
+                    Most of the documentation in this page is taken from <a href="https://www.w3schools.com/html/html_basic.asp">w3schools.com.</a> With some documentation refrenced from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN web docs.</a>
+                </p>
             </article>
         </section>
     </main>
